@@ -2,13 +2,14 @@
 <!-- http://localhost:3000/isolated/exercise/01.html -->
 
 <body>
-    <div id="root"></div>
-
     <script type="module">
-        let element = document.createElement('div');
+        const rootElement = document.createElement('div');
+        const element = document.createElement('div');
+        
         element.textContent = 'Hello World';
         element.className = 'container';
     
-        document.getElementById('root').append(element);
+        document.body.append(rootElement);
+        rootElement.append(element);
     </script>
 </body>
